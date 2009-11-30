@@ -1,0 +1,9 @@
+mm3-keyboard package
+--------------------
+v0.1.0
+
+* Initial release
+* mm3-keyboard.py re-distributed and modified from zawgyi_keyboard.py
+* mm3.ttf font from http://www.myanmarnlp.net.mm
+
+ -- box02 <thebox02@gmail.com> $date Sun Nov 29 22:21:17 CET 2009
