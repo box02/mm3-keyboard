@@ -5,5 +5,6 @@ v0.1.0
 * Initial release
 * mm3-keyboard.py re-distributed and modified from zawgyi_keyboard.py
 * mm3.ttf font from http://www.myanmarnlp.net.mm
+* modified mm xkb file for myanmar3 unicdoe from http://kuniyoshi.fastmail.fm/myanmar/
 
- -- box02 <thebox02@gmail.com> $date Sun Nov 29 22:21:17 CET 2009
+ -- box02 <thebox02@gmail.com> $date Tue Dec  1 22:22:34 CET 2009
