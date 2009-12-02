@@ -7,4 +7,12 @@ v0.1.1
 * mm3.ttf font from http://www.myanmarnlp.net.mm
 * modified mm xkb for myanmar3 unicode from http://kuniyoshi.fastmail.fm/myanmar/
 
- -- box02 <thebox02@gmail.com> $date Wed Dec  2 09:22:51 CET 2009
+ -- box02 <thebox02@gmail.com>  Wed Dec  2 21:39:12 CET 2009
+
+ v0.1.0
+
+ * Initial release
+ * mm3-keyboard.py re-distributed and modified from zawgyi_kyeboard.py
+ * mm3.ttf font from http://www.myanmarnlp.net.mm
+
+ -- box02 <thebox02@gmail.com>  Sun Nov 29 22:21:17 CET 2009

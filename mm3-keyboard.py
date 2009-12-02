@@ -31,7 +31,7 @@ __license__  = "GPLv3"
 
 
 """ 	mm3-keyboard package """
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __metor__ = "box02 <thebox02@gmail.com>"
 
 import glob
@@ -43,22 +43,16 @@ import sys
 #Classifying operating system paths, you can add other distro fhs.
 class Linux:
 	fonts_dir = '/usr/share/fonts'
-	data_dir = '/usr/share'
 	doc_dir = '/usr/share/doc'
 	xkb_dir = ['/usr/share/X11/xkb/symbols', '/etc/X11/xkb/symbols']
-	apps_dir = '/usr/share/applications'
-	icons_dir = '/usr/share/pixmaps'
 	def __init__(self):
 		""" Classifying Linux FHS """
 		print "Using Linux FHS...\n"
 
 class FreeBSD:
 	fonts_dir = '/usr/local/lib/X11/fonts'
-	data_dir = '/usr/local/share'
 	doc_dir = '/usr/local/share/doc'
 	xkb_dir = '/usr/local/share/X11/xkb/symbols'
-	apps_dir = '/usr/local/share/applications'
-	icons_dir = '/usr/local/share/pixmaps'
 	def __init__(self):
 		""" Classifying FreeBSD FHS """
 		print "Using FreeBSD FHS...\n"
@@ -74,19 +68,13 @@ if sys.platform.startswith('linux'):
 			XKB_DIR = correct_xkb_dir
 			break
 	FONT_DIR = use_fhs.fonts_dir
-	DATA_DIR = use_fhs.data_dir
 	DOC_DIR = use_fhs.doc_dir
-	APPS_DIR = use_fhs.apps_dir
-	ICONS_DIR = use_fhs.icons_dir
 elif sys.platform.startswith('freebsd'):
 	print '\nYour system is running FreeBSD'
 	use_fhs = FreeBSD()
 	FONT_DIR = use_fhs.fonts_dir
-	DATA_DIR = use_fhs.data_dir
 	DOC_DIR = use_fhs.doc_dir
 	XKB_DIR= use_fhs.xkb_dir
-	APPS_DIR = use_fhs.apps_dir
-	ICONS_DIR = use_fhs.icons_dir
 else:
 	sys.exit('Sorry, please try on Linux/Unix system!\n')
 
@@ -100,10 +88,7 @@ print 'Checking source files from the package...'
 		src_path = './src0/' and './src1'
 		font_file = './src0/?.ttf'
 		xkb_data = './src0/mm'
-		map_file = './src0/?.pdf or ?.png or ?.jpg'
-		desktop_file = './src0/?.desktop' & './src1/?.desktop'
-		icon = './src0/?.png'
-		
+
 """
 # my source folder and files here:
 src_path_0 = './src0/'

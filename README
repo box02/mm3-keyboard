@@ -32,9 +32,9 @@ package first before proceeding another tasks and ask you to press..
 
 Keys:
 
-i – install : Installing package
-r – remove : Removing package
-h – layout help : Showing short layout option guide
+i - install : Installing package
+r - remove : Removing package
+h - layout help : Showing short layout option guide
 q - exit : ending the program
 
 #########################
@@ -60,7 +60,8 @@ q - exit : ending the program
 #   Testing Keyboard   #
 ########################
 
-Testing on Gedit to know if it corrects or not is a good way. 
-When you get correct words, it is done.
+Testing on Gedit or some GUI text editor to know if it corrects or not
+is a good way. When you get correct typing as you expected according to
+keyboard map, it is done.
 
 Enjoy!
